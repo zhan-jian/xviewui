@@ -1,0 +1,59 @@
+
+body {
+  font: 12px helvetica;
+}
+
+a {
+  color: #284B77;
+  text-decoration: none;
+}
+a:hover {
+  color: #324B99;
+  text-decoration: underline;
+
+}
+.axis path, .axis line {
+  
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+  shape-rendering: crispEdges;
+}
+.header, .footer {
+  margin-left: 20px;
+}
+.teamlogo {
+  float: left;
+}
+.subtitle {
+	padding-top: 1px;
+
+}
+.title {
+	padding: 15px 0px 0px 50px;
+}
+
+.chart {
+	margin-top: 30px;
+}
+
+.helplink {
+	padding-left: 40px;
+}
+
+.help {
+  visibility: hidden;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  padding: 5px;
+  background: #fff;
+  width: 30%;
+}
+
+a.helplink:hover+.help {
+  visibility: visible;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
