@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>test</title>
+	<script src="d3.v3.min.js"></script>
+</head>
+<body>
+<div>
+    <script>
+	
+	var canvas=d3.select("body").append("svg")
+		.attr("width",1200)
+		.attr("height",600)
+		.append("g")
+		.attr("transform","translate(100,50)");
+		
+	var tree =d3.layout.tree()
+		.size([400,200]);
+	
+	d3.json("a.json",function(data){
+	var nodes=tree.nodes(data);
+	var links=tree.links(nodes);
+	
+	var node=canvas.selectAll(".node")
+		.data(nodes)
+		.enter()
+		.append("g")
+			.attr("class","node")
+			.attr("transform",function(d){return "translate("+ d.x +","+ d.y+")";});
+	node.attr()
+	node.append("circle")
+	.attr("r",5)
+	.attr("fill","blue");
+	//// click 
+	node.on("click", function() { document.write("asd"); })
+	/////
+	node.append("text")
+		.text(function(d){return d.name;})
+
+	var diagonal=d3.svg.diagonal();
+			
+		canvas.selectAll(".link")
+			.data(links)
+			.enter()
+			.append("path")
+			.attr("fill","none")
+			.attr("stroke","#ADADAD")
+			.attr("d",diagonal);	
+	});
+
+
+
+
+    </script>
+</div>
+<div>
+<script>
+	var data=[10,50,160];
+	var r_in=100;
+	var r_out=150;
+	
+	var color = d3.scale.ordinal()
+		.range(["red","blue","orange"]);
+
+
+	var group = canvas.append("g")
+		.attr("transform","translate(700,200)");
+
+	var arc = d3.svg.arc()
+		.innerRadius(r_out)
+		.outerRadius(r_in);
+	var pie = d3.layout.pie()
+		.value(function(d){return d;});
+	
+	var arcs=group.selectAll(".arc")
+		.data(pie(data))
+		.enter()
+		.append("g")
+		.attr("class","arc");
+	var path = arcs.append("path")
+		.attr("d",arc)
+		.attr("fill",function(d){return color(d.data);});
+	
+	arcs.append("text")
+		.attr("transform",function(d){return "translate("+arc.centroid(d)+")";})
+
+		.text(function(d){return d.data;});
+
+</script>
+
+</div>
+  </body>
+<body>
+<div>
+<script>
+	
+</script>
+</div>
+</body>
+
+</html>

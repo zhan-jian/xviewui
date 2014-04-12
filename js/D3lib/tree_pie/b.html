@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>test</title>
+	<script src="d3.v3.min.js"></script>
+</head>
+<body>
+    <script>
+	
+	var data=[10,50,160];
+	var r_in=100;
+	var r_out=150;
+	
+	var color = d3.scale.ordinal()
+		.range(["red","blue","orange"]);
+
+	var canvas=d3.select("body").append("svg")
+		.attr("width",400)
+		.attr("height",400);
+
+	var group = canvas.append("g")
+		.attr("transform","translate(200,200)");
+
+	var arc = d3.svg.arc()
+		.innerRadius(r_out)
+		.outerRadius(r_in);
+	var pie = d3.layout.pie()
+		.value(function(d){return d;});
+	
+	var arcs=group.selectAll(".arc")
+		.data(pie(data))
+		.enter()
+		.append("g")
+		.attr("class","arc");
+	var path = arcs.append("path")
+		.attr("d",arc);
+		path.on("dblclick",document.write("asddd"))
+		.attr("fill",function(d){return color(d.data);});
+	
+	arcs.append("text")
+		.attr("transform",function(d){return "translate("+arc.centroid(d)+")";})
+
+		.text(function(d){return d.data;});
+
+
+    </script>
+  </body>
+</html>

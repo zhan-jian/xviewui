@@ -1,0 +1,55 @@
+{
+	"name":"topic1",
+	"children":[
+	{"name":"right",
+	"children":[
+	{"name":"point1","size":1000,
+	"children":[
+	{"name":"man1","size":1000},
+	{"name":"man2","size":1000},
+	{"name":"man3","size":1000}
+]},
+	{"name":"point2","size":1000,
+	"children":[
+	{"name":"man1","size":1000},
+	{"name":"man2","size":1000},
+	{"name":"man3","size":1000}
+]},
+	{"name":"point3","size":1000,
+	"children":[
+	{"name":"man1","size":1000},
+	{"name":"man2","size":1000},
+	{"name":"man3","size":1000}
+]}	
+	]	
+	 },
+	{"name":"left",
+	"children":[
+	{"name":"point1","size":1000,
+	"children":[
+	{"name":"man1","size":1000},
+	{"name":"man2","size":1000},
+	{"name":"man3","size":1000}
+]},
+	{"name":"point2","size":1000,
+	"children":[
+	{"name":"man1","size":1000},
+	{"name":"man2","size":1000},
+	{"name":"man3","size":1000}
+]},
+	{"name":"point3","size":1000,
+	"children":[
+	{"name":"man1","size":1000},
+	{"name":"man2","size":1000},
+	{"name":"man3","size":1000}
+]},
+	{"name":"point4","size":1000,
+	"children":[
+	{"name":"man1","size":1000},
+	{"name":"man2","size":1000},
+	{"name":"man3","size":1000}
+]}	
+	]	
+	 }
+	]
+}
