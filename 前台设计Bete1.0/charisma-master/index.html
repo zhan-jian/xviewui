@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+		Charisma v1.0.0
+
+		Copyright 2012 Muhammad Usman
+		Licensed under the Apache License v2.0
+		http://www.apache.org/licenses/LICENSE-2.0
+
+		http://usman.it
+		http://twitter.com/halalit_usman
+	-->
+	<meta charset="utf-8">
+	<title>xView Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+	<meta name="author" content="Muhammad Usman">
+
+	<!-- The styles -->
+	<link id="bs-css" href="css/bootstrap-cerulean.css" rel="stylesheet">
+	<style type="text/css">
+	body {
+		padding-bottom: 40px;
+	}
+	.sidebar-nav {
+		padding: 9px 0;
+	}
+	</style>
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/charisma-app.css" rel="stylesheet">
+	<link href="css/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+	<link href='css/fullcalendar.css' rel='stylesheet'>
+	<link href='css/fullcalendar.print.css' rel='stylesheet'  media='print'>
+	<link href='css/chosen.css' rel='stylesheet'>
+	<link href='css/uniform.default.css' rel='stylesheet'>
+	<link href='css/colorbox.css' rel='stylesheet'>
+	<link href='css/jquery.cleditor.css' rel='stylesheet'>
+	<link href='css/jquery.noty.css' rel='stylesheet'>
+	<link href='css/noty_theme_default.css' rel='stylesheet'>
+	<link href='css/elfinder.min.css' rel='stylesheet'>
+	<link href='css/elfinder.theme.css' rel='stylesheet'>
+	<link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
+	<link href='css/opa-icons.css' rel='stylesheet'>
+	<link href='css/uploadify.css' rel='stylesheet'>
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
+
+	  <!-- The fav icon -->
+	  <link rel="shortcut icon" href="img/favicon.ico">
+
+	</head>
+
+	<body>
+		<!-- topbar starts -->
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="index.html"> <img alt="Charisma Logo" src="img/logo20.png" /> <span>xView</span></a>
+
+					<!-- theme selector starts -->
+					<div class="btn-group pull-right theme-container" >
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+							<i class="icon-download"></i><span class="hidden-phone"> 下载选中会话信息</span>
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" id="themes">
+							<li><a data-value="classic" href="#"><i class="icon-blank"></i> Classic</a></li>
+							<li><a data-value="cerulean" href="#"><i class="icon-blank"></i> Cerulean</a></li>
+							<li><a data-value="cyborg" href="#"><i class="icon-blank"></i> Cyborg</a></li>
+							<li><a data-value="redy" href="#"><i class="icon-blank"></i> Redy</a></li>
+							<li><a data-value="journal" href="#"><i class="icon-blank"></i> Journal</a></li>
+							<li><a data-value="simplex" href="#"><i class="icon-blank"></i> Simplex</a></li>
+							<li><a data-value="slate" href="#"><i class="icon-blank"></i> Slate</a></li>
+							<li><a data-value="spacelab" href="#"><i class="icon-blank"></i> Spacelab</a></li>
+							<li><a data-value="united" href="#"><i class="icon-blank"></i> United</a></li>
+						</ul>
+					</div>
+					<!-- theme selector ends -->
+
+					<!-- user dropdown starts -->
+
+					<!-- user dropdown ends -->
+
+					<div class="top-nav nav-collapse">
+						<ul class="nav">
+							<li><a href="#">Visit Site</a></li>
+							<li>
+								<form class="navbar-search pull-left">
+									<input placeholder="Search" class="search-query span2" name="query" type="text">
+								</form>
+							</li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+		<!-- topbar ends -->
+		<div class="container-fluid">
+			<div class="row-fluid">
+				
+				<!-- left menu starts -->
+				<div class="span2 main-menu-span">
+					<div class="well nav-collapse sidebar-nav">
+						<ul class="nav nav-tabs nav-stacked main-menu">
+							<li class="nav-header hidden-tablet">Control Board</li>
+							<li><a class="ajax-link" href="index.html"><i class="icon-home"></i><span class="hidden-tablet"> Home</span></a></li>
+							<li><a class="ajax-link" href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> Detali Analyse</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> Reason Show</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 待定</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 待定</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 待定</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 待定</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 待定</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 待定</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 待定</span></a></li>
+							<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> 待定</span></a></li>
+						</div><!--/.well -->
+					</div><!--/span-->
+					<!-- left menu ends -->
+
+					<noscript>
+						<div class="alert alert-block span10">
+							<h4 class="alert-heading">Warning!</h4>
+							<p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+						</div>
+					</noscript>
+
+					<div id="content" class="span10">
+						<!-- content starts -->
+
+
+
+						<div class="sortable row-fluid">
+							<a data-rel="tooltip" title="6 new themes." class="well span3 top-block" href="#">
+								<span class="icon32 icon-orange icon-globe"></span>
+								<div>Total Themes</div>
+								<!-- 标示总的数目 -->
+								<div><b>507</b></div>
+								<span class="notification">6</span>
+							</a>
+
+							<a data-rel="tooltip" title="the news about MH370's lost." class="well span3 top-block" href="#">
+								<span class="icon32 icon-blue icon-lightbulb"></span>
+								<div>Current Theme Name</div>
+								<div>MH370</div>
+								<span class="notification green">4</span>
+							</a>
+
+							<a data-rel="tooltip" title="3 members added." class="well span3 top-block" href="#">
+								<!-- 有人加入，也会用不同的颜色标记有人离去，间隔一定的时间刷新即可 -->
+								<span class="icon32 icon-red icon-users"></span>
+								<div>Current Memebers</div>
+								<div>13320</div>
+								<span class="notification yellow">3</span>
+							</a>
+
+							<a data-rel="tooltip" title="12 new messages." class="well span3 top-block" href="#">
+								<span class="icon32 icon-color icon-messages"></span>
+								<div>Messages of Theme</div>
+								<div>734764</div>
+								<span class="notification red">12</span>
+							</a>
+						</div>
+
+						<div class="row-fluid">
+							<div class="box span12">
+								<div class="box-header well">
+									<h2><i class="icon-info-sign"></i> All Themes</h2>
+									<div class="box-icon">
+										<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+										<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+										<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+									</div>
+								</div>
+								<div class="box-content">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Theme Name</th>
+												<th>Date Beginning</th>
+												<th>Key Words</th>
+												<th>Status</th>                                          
+												<!-- status可以用来区分这个话题的火热程度 -->
+											</tr>
+										</thead>   
+										<tbody>
+											<tr>
+												<td>MH370失去联系</td>
+												<td class="center">2014/10/3</td>
+												<td class="center">马航 失联</td>
+												<td class="center">
+													<span class="label label-important">HOT</span>
+												</td>                                       
+											</tr>
+											<tr>
+												<td>文章确认出轨</td>
+												<td class="center">2014/10/4</td>
+												<td class="center">出轨 文章</td>
+												<td class="center">
+													<span class="label label-important">HOT</span>
+												</td>                                       
+											</tr>
+											<tr>
+												<td>兰州自来水持续污染</td>
+												<td class="center">2014/11/4</td>
+												<td class="center">Admin</td>
+												<td class="center">
+													<span class="label labeL-waring">FORCED</span>
+												</td>                                        
+											</tr>
+											<tr>
+												<td>中央巡视组遭“围剿”</td>
+												<td class="center">2014/14/4</td>
+												<td class="center">信阳 中央巡视组</td>
+												<td class="center">
+													<span class="label label-warning">FORCED</span>
+												</td>                                       
+											</tr>
+											<tr>
+												<td>兰州市遭遇冰雹</td>
+												<td class="center">2014/15/4</td>
+												<td class="center">冰雹 兰州</td>
+												<td class="center">
+													<span class="label label-success">Active</span>
+												</td>                                        
+											</tr>                                   
+										</tbody>
+									</table>  
+									<div class="pagination pagination-centered">
+										<ul>
+											<li><a href="#">Prev</a></li>
+											<li class="active">
+												<a href="#">1</a>
+											</li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">Next</a></li>
+										</ul>
+									</div>     
+								</div>
+							</div><!--/span-->
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="box span12">
+							<div class="box-header well">
+								<h2><i class="icon-info-sign"></i> MH370失联</h2>
+								<div class="box-icon">
+									<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+									<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+									<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+								</div>
+							</div>
+							<div class="box-content">
+								<h1>MH370 <small>客机，马来西亚，失联，中国乘客，153人.</small></h1>
+								<p>一架搭载150余名中国乘客的客机，从马来西亚飞向北京，在经过越南领空时与指挥中心市区联系</p>
+								<p><b>搜救已经进行8个小时，无明显进展.</b></p>
+
+								<p class="center">
+									<a href="http://usman.it/free-responsive-admin-template" class="btn btn-large btn-primary">了解会话详情<i class="icon-info-sign icon-white"></i> </a> 
+									<a href="http://usman.it/free-responsive-admin-template" class="btn btn-large">  下一主题<i class = "icon-forward"></i></a>
+								</p>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="box span4">
+						<div class="box-header well" data-original-title>
+							<h2><i class="icon-user"></i> Related  Information</h2>
+							<div class="box-icon">
+								<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+								<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+							</div>
+						</div>
+						<div class="box-content">
+							<div class="box-content">
+								<ul class="dashboard-list">
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Usman" src="img/p1.jpg"></a>
+											<strong>Name:</strong> <a href="#">历史痕迹
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Said:</strong> 关于法航事故的历史回忆！<br>                                  
+									</li>
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Sheikh Heera" src="img/p2.jpg"></a>
+											<strong>Name:</strong> <a href="#">最新消息
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Status:</strong>MH370最新消息，马来西亚当局称。。。<br>                              
+									</li>
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Abdullah" src="img/p3.jpg"></a>
+											<strong>Name:</strong> <a href="#">凤凰卫视
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Said:</strong> 中国海军派出军机进行搜救<br>                                  
+									</li>
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Saruar Ahmed" src="img/p4.jpg"></a>
+											<strong>Name:</strong> <a href="#">CCTV
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Said:</strong> 中国外交部发言人表示对此事件强烈关注<br>
+									</li>
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Saruar Ahmed" src="img/p2.jpg"></a>
+											<strong>Name:</strong> <a href="#">最新消息
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Said:</strong> 越南军队在其领海发现疑似物体<br>                                 
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div><!--/span-->
+
+					<div class="box span4">
+						<div class="box-header well" data-original-title>
+							<h2><i class="icon-user"></i> Member Activity</h2>
+							<div class="box-icon">
+								<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+								<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+							</div>
+						</div>
+						<div class="box-content">
+							<div class="box-content">
+								<ul class="dashboard-list">
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Usman" src="http://www.gravatar.com/avatar/f0ea51fa1e4fae92608d8affee12f67b.png?s=50"></a>
+											<strong>Name:</strong> <a href="#">爱吃米的小老鼠
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Status:</strong> 这个事情绝对是恐怖袭击！！！<br>                                  
+									</li>
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Sheikh Heera" src="http://www.gravatar.com/avatar/3232415a0380253cfffe19163d04acab.png?s=50"></a>
+											<strong>Name:</strong> <a href="#">与海搏击
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Status:</strong>哎，真是感到忧桑啊，天佑好人。。<br>                              
+									</li>
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Abdullah" src="http://www.gravatar.com/avatar/46056f772bde7c536e2086004e300a04.png?s=50"></a>
+											<strong>Name:</strong> <a href="#">你猜我是谁
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Status:</strong> 这一天天的，到底是几个意思啊<br>                                  
+									</li>
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Saruar Ahmed" src="http://www.gravatar.com/avatar/564e1bb274c074dc4f6823af229d9dbb.png?s=50"></a>
+											<strong>Name:</strong> <a href="#">张晓宇
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Status:</strong> 真相未查明之前，还是仔细等待结果，祈福，不要瞎猜,制造恐慌<br>
+									</li>
+									<li>
+										<a href="#">
+											<img class="dashboard-avatar" alt="Saruar Ahmed" src="http://www.gravatar.com/avatar/564e1bb274c074dc4f6823af229d9dbb.png?s=50"></a>
+											<strong>Name:</strong> <a href="#">张晓宇
+										</a><br>
+										<strong>time:</strong> 10/04/2014<br>
+										<strong>Status:</strong> 就算真是恐怖袭击，引起恐慌也就是达到了恐怖分子的目的<br>                                 
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div><!--/span-->
+
+
+					<div class="box span3">
+						<div class="box-header well" data-original-title>
+							<h2><i class="icon-list-alt"></i> Realtime Traffic</h2>
+						</div>
+						<div class="box-content">
+							<div id="realtimechart" style="height:300px;"></div>
+							<p>Time between updates: <input id="updateInterval" type="text" value="" style="text-align: right; width:5em"> milliseconds</p>
+						</div>
+					</div><!--/span-->
+				</div><!--/row-->
+			</body>
+			<body>
+				<div class="row-fluid sortable">
+					<div class="box span4">
+						<div class="box-header well" data-original-title>
+							<h2><i class="icon-list"></i> Information Labels</h2>
+							
+						</div>
+						<div class="box-content buttons">
+							<!-- <p class="btn-group">
+								<button class="btn">Left</button>
+								<button class="btn">Middle</button>
+								<button class="btn">Right</button>
+							</p> -->
+							<p>
+								<!-- <button class="btn btn-small"><i class="icon-star"></i> News1</button> -->
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<button class="btn btn-small btn-primary">News2</button>
+								<button class="btn btn-small btn-danger">New3</button>
+							</p>
+							<p>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<button class="btn btn-small btn-warning">News</button>
+								<button class="btn btn-small btn-success">营救</button>
+								<button class="btn btn-small btn-info">153名</button>
+							</p>
+							<p>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<button class="btn btn-small btn-inverse">中国乘客</button>
+								<button class="btn btn-large btn-primary btn-round">MH370</button>
+								<!-- <button class="btn btn-large btn-round"><i class="icon-ok"></i></button> -->
+								<!-- <button class="btn btn-primary"><i class="icon-edit icon-white"></i></button> -->
+							</p>
+							<p>
+								<button class="btn btn-mini">马来西亚航空公司</button>
+								<button class="btn btn-mini btn-primary">越南</button>
+								<button class="btn btn-mini btn-danger">Mini button</button>
+								<button class="btn btn-mini btn-warning">Mini button</button>
+							</p>
+							<p>
+								<button class="btn btn-mini btn-info">Mini button</button>
+								<button class="btn btn-mini btn-success">Mini button</button>
+								<button class="btn btn-mini btn-inverse">Mini button</button>
+							</p>
+						</div>
+					</div><!--/span-->
+					
+					<div class="box span4">
+						<div class="box-header well" data-original-title>
+							<h2><i class="icon-list"></i> View Labels</h2>
+							<div class="box-icon">
+								<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+								<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+								<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+							</div>
+						</div>
+						<div class="box-content  buttons">
+							<p>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<button class="btn btn-large">好害怕</button>
+								<button class="btn btn-large btn-primary">祈福</button>
+							</p>
+							<p>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<button class="btn btn-large btn-danger">恐怖</button>
+								<button class="btn btn-large btn-warning">查明真相</button>
+							</p>
+							<p>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<button class="btn btn-large btn-success">保持镇静</button>
+								<button class="btn btn-large btn-info">不要瞎猜</button>
+								&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+								<button class="btn btn-large btn-inverse">团结</button>
+							</p>
+							<div class="btn-group">
+								<button class="btn btn-large">Change View Style</button>
+								<button class="btn btn-large dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#"><i class="icon-star"></i> 正方观点</a></li>
+									<li><a href="#"><i class="icon-tag"></i> 方法观点</a></li>
+									<li><a href="#"><i class="icon-download-alt"></i> 中立观点</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-tint"></i> Separated link</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div><!--/span-->
+					
+					<div class="box span4">
+						<div class="box-header well" data-original-title>
+							<h2><i class="icon-list"></i> Statics</h2>
+							<div class="box-icon">
+								<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
+								<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+								<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+							</div>
+						</div>
+						<div class="box-content">
+							<ul class="dashboard-list">
+								<li>
+									<a href="#">
+										<i class="icon-arrow-up"></i>                               
+										<span class="green">92</span>
+										New Comments                                    
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-arrow-down"></i>
+										<span class="red">15</span>
+										New Registrations
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-minus"></i>
+										<span class="blue">36</span>
+										New Articles                                    
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-comment"></i>
+										<span class="yellow">45</span>
+										User reviews                                    
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-arrow-up"></i>                               
+										<span class="green">112</span>
+										New Comments                                    
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-arrow-down"></i>
+										<span class="red">31</span>
+										New Registrations
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-minus"></i>
+										<span class="blue">93</span>
+										New Articles                                    
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-comment"></i>
+										<span class="yellow">254</span>
+										User reviews                                    
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div><!--/span-->
+				</div><!--/row-->
+				<div class="modal hide fade" id="myModal">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">×</button>
+						<h3>Settings</h3>
+					</div>
+					<div class="modal-body">
+						<p>Here settings can be configured...</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn" data-dismiss="modal">Close</a>
+						<a href="#" class="btn btn-primary">Save changes</a>
+					</div>
+				</div>
+
+				<footer>
+					<p class="pull-left">&copy; <a href="https://github.com/zhan-jian/xviewui/wiki" target="_blank">xView</a> 2014</p>
+					<p class="pull-right">Powered by: <a href="https://github.com/zhan-jian/xviewui/wiki">gaominquan</a></p>
+				</footer>
+
+			</div><!--/.fluid-container-->
+
+	<!-- external javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<!-- transition / effect library -->
+	<script src="js/bootstrap-transition.js"></script>
+	<!-- alert enhancer library -->
+	<script src="js/bootstrap-alert.js"></script>
+	<!-- modal / dialog library -->
+	<script src="js/bootstrap-modal.js"></script>
+	<!-- custom dropdown library -->
+	<script src="js/bootstrap-dropdown.js"></script>
+	<!-- scrolspy library -->
+	<script src="js/bootstrap-scrollspy.js"></script>
+	<!-- library for creating tabs -->
+	<script src="js/bootstrap-tab.js"></script>
+	<!-- library for advanced tooltip -->
+	<script src="js/bootstrap-tooltip.js"></script>
+	<!-- popover effect library -->
+	<script src="js/bootstrap-popover.js"></script>
+	<!-- button enhancer library -->
+	<script src="js/bootstrap-button.js"></script>
+	<!-- accordion library (optional, not used in demo) -->
+	<script src="js/bootstrap-collapse.js"></script>
+	<!-- carousel slideshow library (optional, not used in demo) -->
+	<script src="js/bootstrap-carousel.js"></script>
+	<!-- autocomplete library -->
+	<script src="js/bootstrap-typeahead.js"></script>
+	<!-- tour library -->
+	<script src="js/bootstrap-tour.js"></script>
+	<!-- library for cookie management -->
+	<script src="js/jquery.cookie.js"></script>
+	<!-- calander plugin -->
+	<script src='js/fullcalendar.min.js'></script>
+	<!-- data table plugin -->
+	<script src='js/jquery.dataTables.min.js'></script>
+
+	<!-- chart libraries start -->
+	<script src="js/excanvas.js"></script>
+	<script src="js/jquery.flot.min.js"></script>
+	<script src="js/jquery.flot.pie.min.js"></script>
+	<script src="js/jquery.flot.stack.js"></script>
+	<script src="js/jquery.flot.resize.min.js"></script>
+	<!-- chart libraries end -->
+
+	<!-- select or dropdown enhancer -->
+	<script src="js/jquery.chosen.min.js"></script>
+	<!-- checkbox, radio, and file input styler -->
+	<script src="js/jquery.uniform.min.js"></script>
+	<!-- plugin for gallery image view -->
+	<script src="js/jquery.colorbox.min.js"></script>
+	<!-- rich text editor library -->
+	<script src="js/jquery.cleditor.min.js"></script>
+	<!-- notification plugin -->
+	<script src="js/jquery.noty.js"></script>
+	<!-- file manager library -->
+	<script src="js/jquery.elfinder.min.js"></script>
+	<!-- star rating plugin -->
+	<script src="js/jquery.raty.min.js"></script>
+	<!-- for iOS style toggle switch -->
+	<script src="js/jquery.iphone.toggle.js"></script>
+	<!-- autogrowing textarea plugin -->
+	<script src="js/jquery.autogrow-textarea.js"></script>
+	<!-- multiple file upload plugin -->
+	<script src="js/jquery.uploadify-3.1.min.js"></script>
+	<!-- history.js for cross-browser state change on ajax -->
+	<script src="js/jquery.history.js"></script>
+	<!-- application script for Charisma demo -->
+	<script src="js/charisma.js"></script>
+	
+
+</body>
+</html>
